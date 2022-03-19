@@ -7,7 +7,7 @@ public class newIdSuggestion {
         // 1단계: 대문자를 소문자로 치환
         String answer = new_id.toLowerCase();
         
-        // 2단계: 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.)를 제외한 모든 문자를 제거
+        // 2단계: 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.)를 제외한 모든 문자 제거
         answer = answer.replaceAll("[^0-9a-z-_.]", "");
         
         // 3단계: 연속된 마침표를 하나의 마침표로 치환
@@ -24,7 +24,7 @@ public class newIdSuggestion {
         if(answer.length() >= 16) answer = answer.substring(0, 15);
             answer = answer.replaceAll("[.]{1}$", "");
        
-        // 7단계: 2자리 이하면 3자리가 될때까지 마지막 문자를 반복해서 붙임
+        // 7단계: 2자리 이하면 3자리가 될 때까지 마지막 문자를 반복해서 붙임
         if(answer.length() <= 2) {
             for(int i = answer.length(); i < 3; i++){
                 answer += answer.substring(answer.length()-1);
