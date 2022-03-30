@@ -1,7 +1,7 @@
 package Lv1;
 
 import java.util.*;
-
+// 신고 결과 받기
 public class notifying {
 	
 	public int[] solution(String[] id_list, String[] report, int k) {
