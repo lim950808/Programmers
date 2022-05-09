@@ -1,6 +1,6 @@
 package Lv1;
 //자연수 뒤집어 배열로 만들기
-class makingArrayWithIntegerReversed {
+class makingArrayWithNaturalNumberReversed {
 	  public int[] solution(long n) {
 	      String a = "" + n;
 	        int[] answer = new int[a.length()];
