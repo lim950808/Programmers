@@ -23,7 +23,7 @@ class 가까운수 {
     }
 
     public static void main(String[] args) {
-        int[] array1 = new int[]{3, 10, 228};
+        int[] array1 = new int[]{3, 10, 28};
         int[] array2 = new int[]{10, 11, 12};
 
         int n1 = 20;
