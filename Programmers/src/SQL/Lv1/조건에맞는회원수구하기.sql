@@ -1,0 +1,12 @@
+-- USER_INFO 테이블에서 2021년에 가입한 회원 중 나이가 20세 이상 29세 이하인 회원이 몇 명인지 출력하는 SQL문을 작성해주세요.
+-- Oracle
+-- SELECT
+
+SELECT MAX(ROWNUM) AS USERS
+FROM
+    (
+        SELECT ROWNUM, USER_ID FROM USER_INFO
+        WHERE AGE BETWEEN 20 AND 29
+        AND JOINED BETWEEN TO_DATE('20210101','YYYY-MM-DD') AND TO_DATE('20211231','YYYY-MM-DD')
+    )
+;
